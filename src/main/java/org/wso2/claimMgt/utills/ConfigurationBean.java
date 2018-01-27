@@ -10,6 +10,10 @@ public class ConfigurationBean {
     private String secondaryUserStoreDomain;
     private String tenantDomain;
     private boolean runOnTenant;
+    private String claimUri;
+    private String claimValue;
+    private String profileName;
+    private String userName;
 
     public boolean isRunOnTenant() {
         return runOnTenant;
@@ -68,4 +72,35 @@ public class ConfigurationBean {
     }
 
 
+    public String getClaimUri() {
+        return claimUri;
+    }
+
+    public void setClaimUri(String claimUri) {
+        this.claimUri = claimUri;
+    }
+
+    public String getClaimValue() {
+        return claimValue;
+    }
+
+    public void setClaimValue(String claimValue) {
+        this.claimValue = claimValue;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getProfileName() {
+        return profileName;
+    }
+
+    public void setProfileName(String profileName) {
+        this.profileName = profileName;
+    }
 }
